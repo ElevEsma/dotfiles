@@ -1,2 +1,2 @@
 # config-file
-File for configuration of some programs
+My persona file for configuration of some programs

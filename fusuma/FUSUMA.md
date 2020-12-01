@@ -1,2 +1,2 @@
-#fusuma
-A customa yml for fusuma gesture
+# fusuma
+My custom yml for fusuma gesture

@@ -8,7 +8,7 @@ the most use way to download something on github
   
 ## How to download?
 
-    git clone git://github.com/deathbeam/dotfiles ~/.dotfiles
+    git clone git://github.com/requema/dotfiles ~/.dotfiles
     cd ~/.dotfiles
 
 ## How to update?

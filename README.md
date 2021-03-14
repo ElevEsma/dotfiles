@@ -19,5 +19,8 @@ the most use way to download something on github
 
 ## To do list
 
-* upload i3-setup
-* do an automatic configuration via sh
+* [x] upload i3-setup
+
+* [ ] do an automatic configuration via sh
+
+* [ ] update README.md of evry folder with better documentation

@@ -23,4 +23,6 @@ the most use way to download something on github
 
 * [ ] do an automatic configuration via sh
 
-* [ ] update README.md of evry folder with better documentation
+* [x] update README.md of evry folder with better documentation
+
+* [ ] upload picom and polybar setup

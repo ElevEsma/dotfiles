@@ -21,8 +21,8 @@ the most use way to download something on github
 
 * [x] upload i3-setup
 
-* [ ] do an automatic configuration via sh
-
 * [x] update README.md of evry folder with better documentation
+
+* [ ] do an automatic configuration via sh
 
 * [ ] upload picom and polybar setup

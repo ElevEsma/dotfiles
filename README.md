@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 My persona file for configuration of some programs
 

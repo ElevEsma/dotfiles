@@ -1,5 +1,7 @@
 # zsh
 
+[Zsh](http://zsh.sourceforge.net/) is a shell designed for interactive use, although it is also a powerful scripting language
+
 Why you should use zsh?
 
 * Automatic cd: Just type the directory name

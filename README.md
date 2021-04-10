@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 My persona file for configuration of some programs
 
@@ -19,8 +19,10 @@ the most use way to download something on github
 
 ## To do list
 
-* [x] upload i3-setup
+* [x] upload i3 setup
+
+* [x] update README.md of evry folder with better documentation
 
 * [ ] do an automatic configuration via sh
 
-* [ ] update README.md of evry folder with better documentation
+* [ ] upload picom bspwm and polybar setup

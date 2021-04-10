@@ -22,7 +22,7 @@ My persona file for configuration of some programs
 
    Lastest Beta Version
 
-    git clone -b beta git://github.com/requema/dotfiles ~/.dotfiles
+    git clone -b beta git://github.com/requema/dotfiles /path/to/repo
     cd /path/to/repo
 
 ## How to update?

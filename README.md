@@ -9,6 +9,13 @@ the most use way to download something on github
   
 ## How to download?
 
+   Lastet Realese
+   
+    curl -s https://github.com/requema/dotfiles/releases/latest
+    cd ~/.dotfiles
+    
+   Lastest Stable Version
+    
     git clone git://github.com/requema/dotfiles ~/.dotfiles
     cd ~/.dotfiles
 

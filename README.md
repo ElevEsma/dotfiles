@@ -38,4 +38,4 @@ My persona file for configuration of some programs
 
 * [ ] do an automatic configuration via sh
 
-* [ ] upload picom bspwm and polybar setup
+* [x] upload picom bspwm and polybar setup

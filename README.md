@@ -13,17 +13,17 @@ My persona file for configuration of some programs
    Lastet Realese
 
     curl -s https://github.com/requema/dotfiles/releases/latest
-    cd /path/to/repo
+    cd /path/to/dotfiles
 
    Lastest Stable Version
 
     git clone git://github.com/requema/dotfiles /path/to/repo
-    cd /path/to/repo
+    cd /path/to/dotfiles
 
    Lastest Beta Version
 
     git clone -b beta git://github.com/requema/dotfiles /path/to/repo
-    cd /path/to/repo
+    cd /path/to/dotfiles
 
 ## How to update?
 

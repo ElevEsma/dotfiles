@@ -4,7 +4,7 @@
 
 [Zsh](http://zsh.sourceforge.net/) is a shell designed for interactive use, although it is also a powerful scripting language
 
-[Oh-my-zsh](https://ohmyz.sh/) is my plugin manager and this file work only with it
+[Oh-my-zsh](https://ohmyz.sh/) is my plugin manager and the configuration file work only with it
 
 ## Why you should use zsh?
 

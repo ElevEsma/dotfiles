@@ -4,9 +4,11 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 setxkbmap it &
-picom --no-fading-openclose &
-nitrogen --restore
+picom --config ~/.config/picom/picom.conf &
+nitrogen --restore &
 $HOME/.config/polybar/launch.sh &
+xsetroot -cursor_name left_ptr &
+wmname LG3D
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

@@ -36,6 +36,6 @@ My persona file for configuration of some programs
 
 * [x] update README.md of evry folder with better documentation
 
-* [ ] do an automatic configuration via sh
-
 * [x] upload picom bspwm and polybar setup
+
+* [ ] do an automatic configuration via sh

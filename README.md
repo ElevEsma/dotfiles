@@ -20,10 +20,6 @@ My persona file for configuration of some programs
     git clone git://github.com/requema/dotfiles /path/to/repo
     cd /path/to/dotfiles
 
-   Lastest Beta Version
-
-    git clone -b beta git://github.com/requema/dotfiles /path/to/repo
-    cd /path/to/dotfiles
 
 ## How to update?
 
@@ -35,5 +31,7 @@ My persona file for configuration of some programs
 * [x] upload i3 setup
 
 * [x] update README.md of evry folder with better documentation
+
+* [x] upload picom bspwm and polybar setup
 
 * [ ] do an automatic configuration via sh

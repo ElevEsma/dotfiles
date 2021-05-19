@@ -20,7 +20,6 @@ My persona file for configuration of some programs
     git clone git://github.com/requema/dotfiles /path/to/repo
     cd /path/to/dotfiles
 
-
 ## How to update?
 
     cd ~/.dotfiles

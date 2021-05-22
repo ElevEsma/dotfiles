@@ -10,7 +10,7 @@ My persona file for configuration of some programs
   
 ## How to download?
 
-   Lastet Realese
+   Lastet Realese (ops.. i didn't one :trollface:)
 
     curl -s https://github.com/requema/dotfiles/releases/latest
     cd /path/to/dotfiles

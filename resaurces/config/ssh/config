@@ -1,7 +1,0 @@
-Host raspi-wifi
-  HostName 192.168.1.59
-  User emanuele
-
-Host raspi-lan
-  HostName 192.168.1.58
-  User emanuele

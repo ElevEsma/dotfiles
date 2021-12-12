@@ -4,11 +4,13 @@
  * Mail    : adi1090x@gmail.com
  * Github  : @adi1090x
  * Twitter : @adi1090x
+ * Editor  : ElevEsma
+ * Github  : @ElevEsma
  *
  */
 
 configuration {
-	font:							"Roboto Mono 11";
+	font:						    "NotoSans Nerd Font 11";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -18,7 +20,7 @@ configuration {
 }
 
 * {
-    background:                     #00000060;
+    background:                     #00000080;
     background-alt:              	#00000000;
     background-bar:                 #f2f2f215;
     foreground:                     #f2f2f2EE;
@@ -41,7 +43,7 @@ prompt {
 	padding: 						0.30% 1% 0% -0.5%;
 	background-color: 				@background-alt;
 	text-color: 					@foreground;
-	font:							"FantasqueSansMono Nerd Font 12";
+	font:					        "NotoSans Nerd Font 13";
 }
 
 entry {
@@ -109,7 +111,7 @@ element-text {
     text-color:       				inherit;
     expand:                         true;
     horizontal-align:               0.5;
-    vertical-align:                 0.5;
+    vertical-align:                 0.6;
     margin:                         0.5% 0.5% -0.5% 0.5%;
 }
 

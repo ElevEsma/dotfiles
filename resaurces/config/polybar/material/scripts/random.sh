@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Color files
-PFILE="$HOME/.config/polybar/colors.ini"
-RFILE="$HOME/.config/polybar/scripts/rofi/colors.rasi"
+PFILE="$HOME/.config/polybar/material/colors.ini"
+RFILE="$HOME/.config/polybar/material/scripts/rofi/colors.rasi"
 
 # Change colors
 change_color() {
@@ -10,30 +10,25 @@ change_color() {
 	sed -i -e "s/background = #.*/background = $BG/g" $PFILE
 	sed -i -e "s/foreground = #.*/foreground = $FG/g" $PFILE
 	sed -i -e "s/foreground-alt = #.*/foreground-alt = $FGA/g" $PFILE
-	sed -i -e "s/shade1 = #.*/shade1 = $SH1/g" $PFILE
-	sed -i -e "s/shade2 = #.*/shade2 = $SH2/g" $PFILE
-	sed -i -e "s/shade3 = #.*/shade3 = $SH3/g" $PFILE
-	sed -i -e "s/shade4 = #.*/shade4 = $SH4/g" $PFILE
-	sed -i -e "s/shade5 = #.*/shade5 = $SH5/g" $PFILE
-	sed -i -e "s/shade6 = #.*/shade6 = $SH6/g" $PFILE
-	sed -i -e "s/shade7 = #.*/shade7 = $SH7/g" $PFILE
-	sed -i -e "s/shade8 = #.*/shade8 = $SH8/g" $PFILE
+	sed -i -e "s/module-fg = #.*/module-fg = $MF/g" $PFILE
+	sed -i -e "s/primary = #.*/primary = $AC/g" $PFILE
+	sed -i -e "s/secondary = #.*/secondary = $SC/g" $PFILE
+	sed -i -e "s/alternate = #.*/alternate = $AL/g" $PFILE
 	
 	# rofi
 	cat > $RFILE <<- EOF
 	/* colors */
 
 	* {
-	  al:    #00000000;
-	  bg:    ${BG}FF;
-	  bg1:   ${SH2}FF;
-	  bg2:   ${SH3}FF;
-	  bg3:   ${SH4}FF;
-	  bg4:   ${SH5}FF;
-	  fg:    ${FG}FF;
+	  al:   #00000000;
+	  bg:   ${BG}FF;
+	  bga:  ${AC}33;
+	  bar:  ${MF}FF;
+	  fg:   ${FG}FF;
+	  ac:   ${AC}FF;
 	}
 	EOF
-	
+
 	polybar-msg cmd restart
 }
 
@@ -69,17 +64,33 @@ get_random_color() {
 	echo $RCOLOR
 }
 
-# Main
-BG='#1f1f1f'	# change to light bg
-FG='#FFFFFF'	# change to dark fg
-FGA='#656565'	# change to gray fg
-SH1=`get_random_color`
-SH2=`get_random_color`
-SH3=`get_random_color`
-SH4=`get_random_color`
-SH5=`get_random_color`
-SH6=`get_random_color`
-SH7=`get_random_color`
-SH8=`get_random_color`
+hex_to_rgb() {
+    # Convert a hex value WITHOUT the hashtag (#)
+    R=$(printf "%d" 0x${1:0:2})
+    G=$(printf "%d" 0x${1:2:2})
+    B=$(printf "%d" 0x${1:4:2})
+}
 
+get_fg_color(){
+    INTENSITY=$(calc "$R*0.299 + $G*0.587 + $B*0.114")
+    
+    if [ $(echo "$INTENSITY>186" | bc) -eq 1 ]; then
+        MF="#0a0a0a"
+    else
+        MF="#F5F5F5"
+    fi
+}
+
+# Main
+BG='#1F1F1F'	# change to light bg
+FG='#FFFFFF'	# change to dark fg
+FGA=`get_random_color`
+AC=`get_random_color`
+SC=`get_random_color`
+AL=`get_random_color`
+
+HEX=${AC:1}
+
+hex_to_rgb $HEX
+get_fg_color
 change_color

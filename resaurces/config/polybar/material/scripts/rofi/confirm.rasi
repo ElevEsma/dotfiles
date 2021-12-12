@@ -9,16 +9,16 @@
 }
 
 window {
-    width:      			320px;
+    width:      			225px;
     padding:    			25px;
     border:					1px;
     border-radius:          0px;
-    border-color:           @bg1;
+    border-color:           @ac;
     location:               center;
     y-offset:               -2em;
 }
 
 entry {
     expand: 				true;
-    text-color:				@bg2;
+    text-color:				@ac;
 }
